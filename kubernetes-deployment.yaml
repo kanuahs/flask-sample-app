@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: python-flask
-        image: kanuahs93/pythontest:ip
+        image: kanuahs93/flask-sample-app
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
