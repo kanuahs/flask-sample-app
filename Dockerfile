@@ -2,7 +2,7 @@ FROM python:3-alpine
 
 COPY . /src
 
-RUN pip install -r /src/requirements.txt
+RUN pip install pipenv && pipenv sync
 
 EXPOSE 5000
 
