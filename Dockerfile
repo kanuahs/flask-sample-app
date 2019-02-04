@@ -2,7 +2,11 @@ FROM python:3-alpine
 
 COPY . /src
 
-RUN pip install pipenv && pipenv sync
+RUN pip install pipenv
+
+WORKDIR /src
+
+RUN pipenv sync
 
 EXPOSE 5000
 
