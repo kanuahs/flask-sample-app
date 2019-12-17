@@ -8,7 +8,7 @@ app = Flask(__name__)
 def hello():
     hostname = socket.gethostname()
     IPAddr = socket.gethostbyname(hostname)
-    return "Hello from "+IPAddr+"!"
+    return "Hello from "+IPAddr+" @show&tell!"
 
 
 if __name__ == "__main__":
